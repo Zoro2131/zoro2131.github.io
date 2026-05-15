@@ -41,24 +41,36 @@
             color: #4ea3ff;
         }
 
-        .banner {
-            background-image: url('banner.png');
-            background-size: contain;
-            background-position: top center;
-            background-repeat: no-repeat;
+       .banner {
+            background-color: #111;
+        
             height: 350px;
-            position: relative;
+        
+            display: flex;
+            align-items: center;
+        
+            overflow: hidden;
+        }
+        
+        .banner-image {
+            height: 100%;
+            width: auto;
+        
+            object-fit: contain;
+        
+            margin-left: 20px;
         }
         
         .banner-overlay {
-            background: rgba(0, 0, 0, 0.6);
-            height: 100%;
+            flex: 1;
+        
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
         
-            text-align: center;
+            padding-left: 60px;
+        
+            color: white;
         }
         
         .banner-overlay h1 {
@@ -67,9 +79,8 @@
         }
         
         .banner-overlay p {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             max-width: 700px;
-            padding: 0 20px;
         }
     </style>
 </head>
@@ -78,13 +89,17 @@
 
 
 <div class="banner">
+
+    <img src="banner.png" alt="Banner Image" class="banner-image">
+
     <div class="banner-overlay">
         <h1>James Carter</h1>
 
         <p>
-            Computer Science Student | Full-Stack Developer | Solving Problems One Stack Overflow Tab at a Time
+            Computer Science Student | Full-Stack Developer | Turning Coffee Into Logic
         </p>
     </div>
+
 </div>
 
 <section>
