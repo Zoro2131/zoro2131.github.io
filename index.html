@@ -40,22 +40,60 @@
         a {
             color: #4ea3ff;
         }
+
+        .banner {
+            background-image: url('banner.png');
+            background-size: cover;
+            background-position: center;
+            height: 350px;
+            position: relative;
+        }
+        
+        .banner-overlay {
+            background: rgba(0, 0, 0, 0.6);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+            text-align: center;
+        }
+        
+        .banner-overlay h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
+        
+        .banner-overlay p {
+            font-size: 1.4rem;
+            max-width: 700px;
+            padding: 0 20px;
+        }
     </style>
 </head>
 
 <body>
 
-<header>
-    <h1>JC</h1>
-    <p>Computer Science Student | Full-Stack Developer</p>
-</header>
+
+<div class="banner">
+    <div class="banner-overlay">
+        <h1>JC</h1>
+
+        <p>
+            Computer Science Student | Full-Stack Developer
+        </p>
+    </div>
+</div>
 
 <section>
     <h2>About Me</h2>
 
     <p>
-        Computer Science student focused on full-stack web application development,
-        backend systems, APIs, scalable software architecture, and continuous learning.
+        Computer Science student focused on full-stack web development,
+        backend systems, scalable application architecture, and continuous learning.
+        Passionate about building real-world software solutions and expanding my
+        experience through large-scale collaborative projects.
     </p>
 </section>
 
@@ -63,8 +101,10 @@
     <h2>Skills</h2>
 
     <p>
-        ASP.NET Core • Angular • MySQL • REST APIs • GitHub •
-        Frontend Development • Backend Development • Full-Stack Development
+        ASP.NET Core • Angular • C# • MySQL • REST APIs • GitHub •
+        Frontend Development • Backend Development • Full-Stack Development •
+        JWT Authentication • Service Layer Architecture • API Integration •
+        Responsive UI Design • Debugging
     </p>
 </section>
 
@@ -75,9 +115,11 @@
         <h3>PharmaStock</h3>
 
         <p>
-            Full-stack pharmacy inventory and management system built with
-            ASP.NET Core, Angular, MySQL, REST APIs, authentication systems,
-            and scalable architecture.
+            Large-scale full-stack pharmacy inventory and management system developed
+            using ASP.NET Core, Angular, MySQL, REST APIs, authentication systems,
+            service-layer architecture, AI integration, and scalable backend design.
+            Worked on frontend implementation, backend services, debugging,
+            database integration, and collaborative GitHub development workflows.
         </p>
 
         <a href="https://github.com/DausenBugg/PharmaStock/tree/jcDev">
@@ -87,6 +129,31 @@
 </section>
 
 <section>
+        <h2>Experience</h2>
+
+        <div class="workExp">
+            <h3> Forming Operations Techician - Align Precision</h3>
+
+            <p>
+                Operate and monitor manufacturing systems while performing quality
+                assurance checks, troubleshooting issues, and maintaining workflow
+                efficiency in a fast-paced production environment.
+            </p>
+
+
+        <div class="workExp">
+            <h3>Assistant Store Manager — Walmart</h3>
+
+            <p>
+                Assisted with daily operations and team leadership responsibilities
+                while helping coordinate approximately 25 employees in a fast-paced
+                retail environment.
+            </p>
+    </div>
+</section>
+
+<section>
+    
     <h2>Contact</h2>
 
     <p>Email: JamesC.softwaredev@gmail.com</p>
